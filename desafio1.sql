@@ -34,9 +34,9 @@ CREATE TABLE SpotifyClone.artistas(
 ) engine = InnoDB;
 
 -- -----------------------------------------------------
--- Table `SpotifyClone`.`albums`
+-- Table `SpotifyClone`.`albuns`
 -- -----------------------------------------------------
-CREATE TABLE SpotifyClone.albums(
+CREATE TABLE SpotifyClone.albuns(
 	album_id INT NOT NULL AUTO_INCREMENT,
   artista_id INT NOT NULL,
   album VARCHAR(50) NOT NULL,
@@ -54,7 +54,7 @@ CREATE TABLE SpotifyClone.cancoes(
   cancao VARCHAR(50) NOT NULL,
   duracao_seg VARCHAR(50) NOT NULL,
   PRIMARY KEY (`cancao_id`),
-  FOREIGN KEY (`album_id`) REFERENCES `SpotifyClone`.`albums` (`album_id`)
+  FOREIGN KEY (`album_id`) REFERENCES `SpotifyClone`.`albuns` (`album_id`)
 ) engine = InnoDB;
 
 -- -----------------------------------------------------
@@ -106,7 +106,7 @@ VALUES
 ('Freedie Shannon'),
 ('Tyler Isle'),
 ('Fog');
-INSERT INTO SpotifyClone.albums (artista_id, album, ano_lancamento)
+INSERT INTO SpotifyClone.albuns (artista_id, album, ano_lancamento)
 VALUE
 (1, 'Envious', '1990'),
 (1, 'Exuberant', '1993'),
