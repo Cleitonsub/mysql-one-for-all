@@ -120,7 +120,7 @@ VALUE
 (6, 'Apparatus', '2015');
 INSERT INTO SpotifyClone.cancoes (album_id, cancao, duracao_seg)
 VALUES
-(1, 'Souls For Us', 200),
+(1, 'Soul For Us', 200),
 (1, 'Reflections Of Magic', 163),
 (1, 'Dance With Her Own', 116),
 (2, 'Troubles Of My Inner Fire', 203),
